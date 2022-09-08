@@ -1,0 +1,15 @@
+{
+  "name": "brian_portfolio",
+  "version": "1.0.0",
+  "description": "Brian's portilio site",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass assets/sass/main.scss assets/css/styles.css -w"
+  },
+  "keywords": [],
+  "author": "Brian Kiarie Mwaniki",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
