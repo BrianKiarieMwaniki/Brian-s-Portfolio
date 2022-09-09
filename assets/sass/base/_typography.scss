@@ -70,3 +70,56 @@
     left: 0;
   }
 }
+
+.designer {
+  &-title {
+    font-family: $open-sans;
+    font-size: 2rem;
+    font-weight: 100;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-subtitle {
+    font-family: $open-sans;
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    @include respond(phone){
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.footer {
+  &__links {
+    & h3 {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.8rem;
+      letter-spacing: 0.04rem;
+    }
+  }
+
+  &-link {
+    color: $color-orange;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    &:hover{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  &__socials{
+    & h3{
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.8rem;
+      letter-spacing: 0.04rem;
+    }
+  }
+}
