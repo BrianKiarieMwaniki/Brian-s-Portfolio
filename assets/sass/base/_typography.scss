@@ -7,7 +7,7 @@
     display: inline;
     color: #fff;
     font-family: $open-sans;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 600;
     letter-spacing: 0.15rem;
     text-shadow: 5px 0px 4px #050505;
@@ -34,7 +34,7 @@
       color: $color-orange;
     }
 
-    @include respond(phone) {
+    @include respond(tab-land) {
       width: 100%;
     }
   }

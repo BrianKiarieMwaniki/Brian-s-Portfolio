@@ -1,18 +1,23 @@
 (function () {
-  window.onscroll = function () {
-    myFunction();
-  };
+  // window.onscroll = function () {
+  //   manipulateStickyNav();
+  // };
 
-  let navbar = document.querySelector("nav");
-  let sectionIntro = document.getElementById("section-intro");  
-
+  let navbar = document.getElementById("nav");
+  let sectionIntro = document.getElementById("section-intro"); 
+  let introtext = document.getElementById("intro-text"); 
+ let introtextPos = introtext.getBoundingClientRect().top;
   let sticky = navbar.offsetTop;
 
-  function myFunction() {
-    if (window.pageYOffset >= sectionIntro.offsetTop) {
+  let condition = introtextPos + window.scrollY;
+  
+  function manipulateStickyNav() {    
+    if (condition >= 500) {
       navbar.classList.add("sticky");
-    } else {
+    }else {
       navbar.classList.remove("sticky");
     }
+    console.log(sticky);
+    console.log(introtextPos + window.scrollY);
   }
 })();
