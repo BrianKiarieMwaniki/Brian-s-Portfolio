@@ -4,9 +4,23 @@
 }
 
 .parallax-bgimg {
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.highlight {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    background-color: $color-orange;
+    height: 2rem;
+    position: absolute;
+    bottom: .5px;
+    left:0;
+    z-index: -1;
+  }
 }
