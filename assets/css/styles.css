@@ -3,7 +3,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
  */
-@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700";
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900);
@@ -10274,16 +10274,14 @@ html {
 }
 
 body {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  width: auto;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.6;
-}
-
-main {
-  height: 100%;
+  overflow-y: auto;
+  position: relative;
 }
 
 .nav-link {
@@ -10294,7 +10292,7 @@ main {
   display: inline;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 0.15rem;
   text-shadow: 5px 0px 4px #050505;
@@ -10319,7 +10317,7 @@ main {
   text-shadow: 2px 0px 5px #000;
   color: #f08c0a;
 }
-@media (max-width: 30em) {
+@media (max-width: 64em) {
   .intro-description {
     width: 100%;
   }
@@ -10350,6 +10348,49 @@ main {
   position: absolute;
   bottom: -2px;
   left: 0;
+}
+
+.designer-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+@media (max-width: 30em) {
+  .designer-title {
+    font-size: 1.5rem;
+  }
+}
+.designer-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+@media (max-width: 30em) {
+  .designer-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+.footer__links h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 0.04rem;
+}
+.footer-link {
+  color: #f08c0a;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer__socials h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 0.04rem;
 }
 
 .sticky {
@@ -10387,8 +10428,9 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 1rem 10rem;
   background-image: url(../../assets/images/background.jpg);
+  position: relative;
 }
 @media (max-width: 48em) {
   .section-intro {
@@ -10397,19 +10439,16 @@ main {
   }
 }
 .section-intro__text-container {
-  flex: 1 1 50%;
+  flex: 0 1 50%;
   position: relative;
 }
-@media (max-width: 48em) {
+@media (max-width: 64em) {
   .section-intro__text-container {
     flex: 1 1 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-}
-.section-intro__photo-container {
-  flex: 1 1 50%;
 }
 .section-intro__icons-list {
   list-style: none;
@@ -10428,6 +10467,13 @@ main {
   color: #f08c0a;
 }
 
+.section-projects {
+  min-height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 10rem;
+}
+
 .nav {
   overflow: hidden;
   width: 100%;
@@ -10435,6 +10481,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1rem 2rem;
+  transition: all 0.2s ease-out;
 }
 .nav p {
   flex: 1 1 100%;
@@ -10450,6 +10497,74 @@ main {
 
 .footer {
   width: 100%;
+  background-color: #464646;
+  padding: 5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 48em) {
+  .footer {
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem 2rem;
+  }
+}
+.footer__designer-info {
+  flex: 1 1 33%;
+  color: #fff;
+}
+@media (max-width: 48em) {
+  .footer__designer-info {
+    width: 100%;
+  }
+}
+.footer__links {
+  flex: 1 1 33%;
+}
+.footer__links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__links ul li:not(:first-child) {
+  margin-left: 2rem;
+}
+@media (max-width: 48em) {
+  .footer__links {
+    width: 100%;
+  }
+}
+.footer__socials {
+  flex: 1 1 33%;
+  margin-left: 2rem;
+  padding: 0 2rem;
+}
+.footer__socials ul {
+  list-style: none;
+  display: flex;
+}
+.footer__socials ul li:not(:first-child) {
+  margin-left: 2rem;
+}
+@media (max-width: 30em) {
+  .footer__socials ul li {
+    margin-left: 1rem;
+  }
+}
+.footer__socials ul li .icon {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: color 0.2s ease-out;
+}
+.footer__socials ul li .icon:hover {
+  color: #f08c0a;
+}
+@media (max-width: 48em) {
+  .footer__socials {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

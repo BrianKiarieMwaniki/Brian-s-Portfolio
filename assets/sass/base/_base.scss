@@ -16,15 +16,14 @@ html {
 }
 
 body {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  width: auto;
+  width: 100%;
   font-family: $open-sans;
   font-weight: 400;
-  line-height: 1.6;
-}
+  overflow-y: auto;
 
-main{
-  height: 100%;
+  position: relative;
 }
 
