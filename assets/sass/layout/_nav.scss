@@ -1,4 +1,19 @@
 .nav{
     overflow: hidden;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+
+    & p{
+        flex: 1 1 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+
+    @include respond(phone){
+        padding: .75rem;
+    }
 }
