@@ -1,0 +1,14 @@
+.intro{
+    font-family: $open-sans;
+
+    &-title{
+        font-size: 2.5rem;
+        font-weight: 400;
+        letter-spacing: .25rem;
+    }
+
+    &-description{
+        font-size: 1.4rem;
+        
+    }
+}
