@@ -10329,6 +10329,7 @@ body {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   position: relative;
+  z-index: 10;
 }
 .nav-link:focus, .nav-link:hover {
   color: #f08c0a;
@@ -10348,6 +10349,7 @@ body {
   position: absolute;
   bottom: -2px;
   left: 0;
+  z-index: -1;
 }
 
 .designer-title {

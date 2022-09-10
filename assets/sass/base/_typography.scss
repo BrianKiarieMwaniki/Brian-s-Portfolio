@@ -46,6 +46,7 @@
   font-family: $open-sans;
   text-decoration: none;
   position: relative;
+  z-index:10;
 
   &:focus,
   &:hover {
@@ -68,6 +69,7 @@
     position: absolute;
     bottom: -2px;
     left: 0;
+    z-index: -1;
   }
 }
 
