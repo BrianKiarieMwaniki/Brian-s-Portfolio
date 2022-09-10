@@ -126,3 +126,12 @@
     }
   }
 }
+
+.about-main{
+  font-family: $open-sans;
+
+  &__main-heading{
+    font-weight: 200;
+    font-size: 4rem;
+  }
+}

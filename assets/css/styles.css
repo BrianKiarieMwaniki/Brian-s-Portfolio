@@ -10396,6 +10396,14 @@ body {
   letter-spacing: 0.04rem;
 }
 
+.about-main {
+  font-family: "Open Sans", sans-serif;
+}
+.about-main__main-heading {
+  font-weight: 200;
+  font-size: 4rem;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -10404,6 +10412,10 @@ body {
 
 .hidden {
   display: none;
+}
+
+.display-flex {
+  display: flex !important;
 }
 
 .parallax-bgimg {
@@ -10481,6 +10493,100 @@ body {
   width: 100%;
   background-color: #fff;
   padding: 10rem;
+}
+
+.about-navigation {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+@media (max-width: 48em) {
+  .about-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+.about-navigation .name {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in;
+}
+.about-navigation .name:hover {
+  color: #f08c0a;
+  font-weight: 600;
+}
+.about-navigation .start {
+  flex: 1 1 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+@media (max-width: 48em) {
+  .about-navigation .start {
+    display: none;
+    flex: 1 1 100%;
+  }
+}
+.about-navigation .start > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+@media (max-width: 48em) {
+  .about-navigation .start > div {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    z-index: 10;
+  }
+  .about-navigation .start > div a:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+.about-navigation .end {
+  display: none;
+  flex: 1 1 20%;
+  justify-content: center;
+  align-items: center;
+}
+.about-navigation .end .icon {
+  margin-left: auto;
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 2rem;
+}
+@media (max-width: 48em) {
+  .about-navigation .end {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+.about-main {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about-main__text-container {
+  flex: 0 1 60%;
+}
+@media (max-width: 48em) {
+  .about-main__text-container {
+    margin-top: 7rem;
+  }
 }
 
 .nav {
