@@ -126,3 +126,15 @@
     }
   }
 }
+
+.about-main{
+  font-family: $open-sans;
+  text-align: justify;
+
+  &__main-heading{
+    font-weight: 400;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+    word-wrap: break-word;
+  }
+}

@@ -8,6 +8,8 @@
   let introtext = document.getElementById("intro-text");
   let introtextPos = introtext.getBoundingClientRect().bottom;
 
+  
+
   function manipulateStickyNav() {
     let condition = introtextPos + scrollY;
     if(condition <= 589){
