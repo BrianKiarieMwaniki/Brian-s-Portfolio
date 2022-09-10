@@ -1,23 +1,19 @@
 (function () {
-  // window.onscroll = function () {
-  //   manipulateStickyNav();
-  // };
+  window.onscroll = function () {
+    manipulateStickyNav();
+  };
 
   let navbar = document.getElementById("nav");
-  let sectionIntro = document.getElementById("section-intro"); 
-  let introtext = document.getElementById("intro-text"); 
- let introtextPos = introtext.getBoundingClientRect().top;
-  let sticky = navbar.offsetTop;
+  let navbar2 = document.getElementById("nav2");
 
-  let condition = introtextPos + window.scrollY;
-  
-  function manipulateStickyNav() {    
-    if (condition >= 500) {
+  function manipulateStickyNav() {
+    let condition = introtextPos + scrollY;
+    if (condition <= 589) {
       navbar.classList.add("sticky");
-    }else {
+      navbar2.classList.add("hidden");
+    } else {
       navbar.classList.remove("sticky");
+      navbar2.classList.remove("hidden");
     }
-    console.log(sticky);
-    console.log(introtextPos + window.scrollY);
   }
 })();

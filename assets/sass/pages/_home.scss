@@ -15,6 +15,7 @@
   &__text-container {
     flex: 0 1 50%;
     position: relative;
+    backdrop-filter: saturate(70%);
 
     @include respond(tab-land) {
       flex: 1 1 100%;
