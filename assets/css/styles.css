@@ -10356,7 +10356,7 @@ body {
 .designer-title {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 400;
 }
 @media (max-width: 30em) {
   .designer-title {

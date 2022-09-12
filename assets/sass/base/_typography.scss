@@ -78,7 +78,7 @@
   &-title {
     font-family: $open-sans;
     font-size: 2rem;
-    font-weight: 100;
+    font-weight:400;
 
     @include respond(phone) {
       font-size: 1.5rem;
