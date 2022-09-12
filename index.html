@@ -11,13 +11,13 @@
     <nav class="nav sticky" id="nav">
       <p class="text-shadow">Brian K. Mwaniki</p>
       <a href="/pages/about.html" class="nav-link text-shadow">about</a>
-      <a href="" class="nav-link text-shadow">my skills</a>
+      <a href="#mySkills" class="nav-link text-shadow">my skills</a>
       <a href="#projects" class="nav-link text-shadow">projects</a>
       <a href="#contact" class="nav-link text-shadow">contact</a>
     </nav>
 
     <div class="navigation hidden" id="nav2">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
@@ -25,15 +25,29 @@
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="/pages/about.html" class="navigation__link"><span>01</span>About</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>My Skills</a></li>
-          <li class="navigation__item"><a href="#projects" class="navigation__link"><span>03</span>Projects</a></li>
-          <li class="navigation__item"><a href="#contact" class="navigation__link"><span>04</span>Contact</a></li>
+          <li class="navigation__item">
+            <a href="/pages/about.html" class="navigation__link"
+              ><span>01</span>About</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>My Skills</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link"
+              ><span>03</span>Projects</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#contact" class="navigation__link"
+              ><span>04</span>Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
 
-    <sectoin class="section-intro parallax-bgimg" id="section-intro">
+    <section class="section-intro parallax-bgimg" id="section-intro">
       <div class="section-intro__text-container" id="intro-text">
         <h1 class="intro-title">
           Hi, I'<span class="highlight">m Brian. I Develop Software.</span>
@@ -84,8 +98,54 @@
         </ul>
       </div>
       <div class="section-intro__photo-container"></div>
-    </sectoin>
-    <sectoin class="section-projects" id="projects"> </sectoin>
+    </section>
+    <section class="section-skills" id="mySkills">
+      <div class="section-skills__content">
+        <h2 class="section-heading">
+          My <span class="highlight">Skills</span>
+        </h2>
+        <div>
+          <img
+            src="./assets/images/me.jpeg"
+            alt="my photo"
+            class="section-skills__photo"
+          />
+          <div class="section-skills__skills-container">
+            <ul class="section-skills__skills-list">
+              <li>C#</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>ASP.NET Core</li>
+              <li>MVC</li>
+              <li>Blazor</li>
+              <li>REST APIs</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>MS SQL Server</li>
+              <li>MySQL</li>
+              <li>Git</li>
+              <li>Github</li>
+              <li>Docker & Containers</li>
+            </ul>
+            <h3>Software development is my passion</h3>
+            <p>
+              Ever since I was introduced to programming I have dabbled with a
+              few programming languages and frameworks. In the recent past, I
+              feel that I have settled more with the
+              <strong>.NET Stack</strong> and <strong>Javascript</strong>. I am
+              always learning and improving.
+            </p>
+            <a href="./pages/about.html" class="section-skills__about-link"
+              >Learn more about me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-projects" id="projects"></section>
 
     <footer class="footer">
       <div class="footer__designer-info">
