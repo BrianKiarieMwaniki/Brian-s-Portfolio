@@ -48,63 +48,88 @@
   }
 }
 
-.section-skills{
+.section-skills {
   display: flex;
   justify-content: center;
-  margin:1rem 0;
+  margin: 1rem 15%;
 
-  &__content{
-    flex: 0 1 60%;
-    display:flex;
+  @include respond(big-desktop) {
+    margin: 1rem 10rem;
+  }
+  @include respond(tab-land) {
+    margin: 1rem 8rem;
+  }
+
+  @include respond(tab-port) {
+    margin: 1rem 4rem;
+  }
+
+  &__content {
+    display: flex;
     flex-wrap: wrap;
-    & > div{
-      display: flex;
+
+    & > div {
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(2, min-content);
+      grid-template-columns: 35rem auto;
+      grid-template-areas: "photo skills" "photo summary";
+
+      @include respond(tab-land) {
+        grid-template-areas: "photo skills" "summary summary";
+      }
+
+      @include respond(tab-port){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas: "photo" "skills" "summary";
+      }
     }
   }
 
-  & .section-heading{
+  & .section-heading {
     width: 100%;
   }
 
-  &__photo{
-    height: 40rem;
+  &__photo {
+    height: 30rem;
     width: auto;
-    border-radius: 10px;
-    box-shadow: 1rem 0 5rem .5rem rgba($color-black,.2);
+    border-radius: 10px;    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     margin-right: 4rem;
+    margin-bottom: 2rem;
+    grid-area: photo;
+
+    @include respond(tab-port){
+      margin:0 auto 2rem;
+    }
   }
 
-  &__skills-container{
-    display: flex;
-    flex-direction: column;
+  &__skills-container {
+    @include respond(tab-port) {
+      grid-area: skills;
+    }
   }
 
-  &__skills-list{
+  &__skills-list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 
-    & li{
-      &:not(:last-child){
-        margin-right: 1rem;
+    & li {
+      &:not(:last-child) {
+        margin-right: .5rem;
       }
       margin-bottom: 1rem;
       background-color: $color-black;
       color: $color-white;
       font-size: 1.2rem;
-      padding: 2rem;
+      padding: 1rem 2rem;
     }
   }
 
-  &__about-link{
-    text-decoration: none;
-    color: $color-primary;
-    font-size: 1.4rem;
-    font-weight: 600;
-    
-    &:hover{
-      animation: pulseText 1s infinite;
-    }
+  &__summary {
+    grid-area: summary;
   }
 }
 
