@@ -41,7 +41,7 @@
   }
 }
 
-.section-skills__skills-container{
+.section-skills__summary{
   & h3{
     font-size: 2rem;
     font-weight: 600;
@@ -49,11 +49,22 @@
   }
 
   & p {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 1.5rem;
     word-spacing: 0.5rem;
     line-height: 2.5rem;
     margin-bottom: 2rem;
+  }
+
+  & .about-link{
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+    &:hover{
+      animation: pulseText 1s infinite;
+    }
   }
 }
 .nav-link {
