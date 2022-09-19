@@ -147,16 +147,15 @@
     font-size: 1.6rem;
   }
 
-  &__icon{
+  &__icon {
     margin-left: 2rem;
     color: $color-primary;
     font-size: 4rem;
 
-    @include respond(phone){
+    @include respond(phone) {
       font-size: 2rem;
       margin-left: 1rem;
     }
-
   }
 }
 
@@ -244,3 +243,5 @@
     }
   }
 }
+
+
